@@ -1,71 +1,70 @@
 <div align="center">
 
-# ⚡ LilyGo T-Dongle-S3 Firmware Collection ⚡
+# ⚡ LilyGo T-Dongle-S3 Firmware Vault ⚡
 
-[![Platform](https://img.shields.io/badge/Platform-ESP32--S3-blue?style=for-the-badge&logo=espressif)](https://www.espressif.com/)
-[![Device](https://img.shields.io/badge/Device-LilyGo%20T--Dongle-orange?style=for-the-badge&logo=arduino)](https://www.lilygo.cc/)
-[![Collection](https://img.shields.io/badge/Type-Firmware%20Collection-green?style=for-the-badge)](https://github.com/kaliwinki-1)
+[![Device](https://img.shields.io/badge/Device-LilyGo%20T--Dongle%20S3-blue?style=for-the-badge&logo=espressif&logoColor=white)](https://www.lilygo.cc/)
+[![Collection](https://img.shields.io/badge/Type-Firmware%20Collection-violet?style=for-the-badge&logo=github)](https://github.com/kaliwinki-1)
+[![Status](https://img.shields.io/badge/Status-Archived-orange?style=for-the-badge)]()
 
-*A curated collection of penetration testing and utility firmwares for the LilyGo T-Dongle-S3.*
+*A curated collection of the best penetration testing and utility tools for the LilyGo T-Dongle-S3.*
 
-[Report an Issue](https://github.com/kaliwinki-1/T-Dongle-S3-Firmware/issues) • [View Files](https://github.com/kaliwinki-1/T-Dongle-S3-Firmware/tree/main)
+[📂 Browse Files](https://github.com/kaliwinki-1/T-Dongle-S3-Firmware/tree/main) • [🐛 Report Issue](https://github.com/kaliwinki-1/T-Dongle-S3-Firmware/issues)
 
 ---
 </div>
 
 > [!IMPORTANT]
-> **⚠️ DISCLAIMER & CREDIT / AVERTISSEMENT**
+> **⚠️ CREDIT & DISCLAIMER / CRÉDITS & AVERTISSEMENT**
 > 
-> This repository is a **personal archive/collection**. I am **not** the author of these firmwares. 
-> All credit goes to the brilliant developers listed below. Please support them by starring their original repositories!
+> This repository is a **personal archive**. I am **not** the author of these firmwares. 
+> All credit goes to the brilliant developers listed below. **Please give them a ⭐ on their original repos!**
 > 
 > *Ce dépôt est une collection personnelle. Je ne suis pas l'auteur de ces programmes. Tout le mérite revient aux créateurs originaux cités ci-dessous.*
 
 ---
 
-## 📂 Included Projects / Projets Inclus
+## 💎 Featured Projects / Projets Vedettes
 
-Here is the list of firmwares currently hosted in this repository. Click the **Original Source** to support the creators.
+The following projects are hosted in this collection. Please visit the **Original Source** for documentation and updates.
 
-| 📦 Firmware / Folder | 📝 Description | 👤 Original Creator / Source |
+| 📂 Folder Name | 📝 Description | 🔗 **Official Source (Give a ⭐)** |
 | :--- | :--- | :--- |
-| **USB Army Knife** | The ultimate Swiss Army Knife for the ESP32-S3. Includes WiFi attacks, BadUSB, and more. | [**0x01G0r** (GitHub)](https://github.com/0x01G0r/USB-Army-Knife) |
-| **WiFiExe** | ESP32-S3 based BadUSB that allows remote payload execution via a web interface. | [**ravssh** (GitHub)](https://github.com/ravssh/WifiExe) |
-| **UltraWiFiDuck** | Advanced BadUSB script injection (Ducky Script) over WiFi. Based on the famous WiFiDuck. | [**Spacehuhn** (GitHub)](https://github.com/spacehuhn/WiFiDuck) |
-| **WHID-Master** | "WiFi HID Injector". Allows you to inject keystrokes remotely over WiFi. | [**WHID-Injector** (GitHub)]([https://github.com/whid-injector/WHID](https://github.com/exploitagency/ESPloitV2)) |
+| **USB Army Knife** | The ultimate pocket tool for pentesting. Attacks, BadUSB, and mass storage emulation. | [![GitHub](https://img.shields.io/badge/Repo-i--am--shodan-181717?style=flat-square&logo=github)](https://github.com/i-am-shodan/USBArmyKnife) |
+| **UltraWiFiDuck** | Advanced Ducky Script injection over WiFi. A powerful evolution of the original WiFiDuck. | [![GitHub](https://img.shields.io/badge/Repo-EmileSpecialProducts-181717?style=flat-square&logo=github)](https://github.com/EmileSpecialProducts/UltraWiFiDuck) |
+| **WiFiExe** | Execute payloads remotely via a web interface. Perfect for "drive-by" style demos. | [![GitHub](https://img.shields.io/badge/Repo-ravssh-181717?style=flat-square&logo=github)](https://github.com/ravssh/WifiExe) |
+| **WHID-Master** | **ESPloitV2**. A comprehensive framework for WiFi HID injection and remote control. | [![GitHub](https://img.shields.io/badge/Repo-exploitagency-181717?style=flat-square&logo=github)](https://github.com/exploitagency/ESPloitV2) |
 
 ---
 
 ## 🚀 Quick Start Guide
 
-Most of these firmwares come as `.bin` files or source code.
+### 1. Preparation
+* Hold the **BOOT button** on your T-Dongle-S3.
+* Plug the device into your USB port.
+* Release the button (the screen might stay black, that's normal in boot mode).
 
-### 🔧 How to Flash (Generic Method)
+### 2. Flashing
+You can use the **[ESP Web Tool](https://web.esphome.io/)** (runs in Chrome/Edge) to flash the `.bin` files found in the folders above.
 
-1.  **Enter Boot Mode:**
-    * Hold the **BOOT** button on your T-Dongle-S3.
-    * Plug it into your USB port.
-    * Release the button.
-2.  **Flash:**
-    * Use **[ESP Web Tool](https://web.esphome.io/)** (Chrome/Edge) or **[Esptool.py](https://github.com/espressif/esptool)**.
-    * Select the `.bin` file from the folder you want to try.
-    * Flash at offset `0x0` (unless specified otherwise in the folder's text file).
+* **Offset:** `0x0` (Default for most S3 binaries)
+* **Erase Flash:** Recommended before switching between different projects.
 
 > [!TIP]
-> Check the `.txt` or `README` files inside each specific folder for detailed instructions (WiFi passwords, default IPs, etc.).
+> Check the `.txt` or `README` inside each folder for specific passwords (e.g., `12345678` or `exploit`) and default IP addresses (often `192.168.4.1`).
 
 ---
 
-## ⚖️ License & Rights
+## ⚖️ Legal & Removal
 
-Each project in this collection is subject to its original license (MIT, GPL, etc.).
-* If you are a developer and want your work removed from this collection, please **open an issue**, and I will remove it immediately.
-* *Si vous êtes un créateur et souhaitez que votre projet soit retiré, ouvrez une issue et je le ferai immédiatement.*
+* **License:** Each firmware is subject to the license of its original creator (MIT, GPL, etc.).
+* **Removal Request:** If you are a project owner and wish for your binary to be removed from this archive, please open an [Issue](https://github.com/kaliwinki-1/T-Dongle-S3-Firmware/issues) and it will be deleted immediately.
 
 ---
 
 <div align="center">
 
-*Collection maintained by [kaliwinki-1](https://github.com/kaliwinki-1)* *Happy Hacking!* 🏴‍☠️
+*Collection maintained by [kaliwinki-1](https://github.com/kaliwinki-1)* *Respect the code. Support the creators.*
+
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=000000&height=100&section=footer)
 
 </div>
