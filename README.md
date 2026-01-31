@@ -32,7 +32,7 @@ Here is the list of firmwares currently hosted in this repository. Click the **O
 | **USB Army Knife** | The ultimate Swiss Army Knife for the ESP32-S3. Includes WiFi attacks, BadUSB, and more. | [**0x01G0r** (GitHub)](https://github.com/0x01G0r/USB-Army-Knife) |
 | **WiFiExe** | ESP32-S3 based BadUSB that allows remote payload execution via a web interface. | [**ravssh** (GitHub)](https://github.com/ravssh/WifiExe) |
 | **UltraWiFiDuck** | Advanced BadUSB script injection (Ducky Script) over WiFi. Based on the famous WiFiDuck. | [**Spacehuhn** (GitHub)](https://github.com/spacehuhn/WiFiDuck) |
-| **WHID-Master** | "WiFi HID Injector". Allows you to inject keystrokes remotely over WiFi. | [**WHID-Injector** (GitHub)](https://github.com/whid-injector/WHID) |
+| **WHID-Master** | "WiFi HID Injector". Allows you to inject keystrokes remotely over WiFi. | [**WHID-Injector** (GitHub)]([https://github.com/whid-injector/WHID](https://github.com/exploitagency/ESPloitV2)) |
 
 ---
 
